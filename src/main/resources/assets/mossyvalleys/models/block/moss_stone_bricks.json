@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "mossyvalleys:block/moss_stone_bricks"
+    }
+}

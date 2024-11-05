@@ -1,8 +1,9 @@
 package me.nleww.mossyvalleys;
 
+import me.nleww.mossyvalleys.block.ModBlocks;
+import me.nleww.mossyvalleys.item.ModItemGroups;
+import me.nleww.mossyvalleys.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-
-import org.apache.commons.logging.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,8 @@ public class MossyValleys implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerModItemGroups();
 	}
 }
