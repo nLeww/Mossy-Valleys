@@ -9,6 +9,9 @@
   "block.mossyvalleys.moss_stone_pillar": "Moss Stone Pillar",
   "block.mossyvalleys.moss_stone": "Moss Stone",
   "block.mossyvalleys.chiseled_moss_stone": "Chiseled Moss Stone",
+  "block.mossyvalleys.moss_stone_brick_slab": "Moss Stone Brick Slab",
+  "block.mossyvalleys.moss_stone_brick_stairs": "Moss Stone Brick Stairs",
+  "block.mossyvalleys.moss_stone_brick_wall": "Moss Stone Brick Wall",
 
   "note": " ITEM GROUPS GO HERE ",
   "itemGroup.mossyvalleys.mossy_valleys": "Mossy Valleys",

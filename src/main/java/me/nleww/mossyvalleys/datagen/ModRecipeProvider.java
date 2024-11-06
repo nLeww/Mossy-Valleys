@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -38,6 +39,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MOSS_STONE_BRICKS),conditionsFromItem(ModBlocks.MOSS_STONE_BRICKS))
                 .offerTo(exporter);
 
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSS_STONE_BRICK_SLAB, ModBlocks.MOSS_STONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSS_STONE_BRICK_WALL, ModBlocks.MOSS_STONE_BRICKS);
+        createStairsRecipe(ModBlocks.MOSS_STONE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.MOSS_STONE_BRICKS));
     }
 }
 

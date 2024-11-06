@@ -16,9 +16,12 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerRotatable(ModBlocks.MOSS_STONE);
-        blockStateModelGenerator.registerRotatable(ModBlocks.MOSS_STONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_MOSS_STONE);
         //Moss stone pillar is done manually cuz idk how to make a pillar here :(
+        BlockStateModelGenerator.BlockTexturePool mossStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSS_STONE_BRICKS);
+        mossStoneBricksPool.stairs(ModBlocks.MOSS_STONE_BRICK_STAIRS);
+        mossStoneBricksPool.slab(ModBlocks.MOSS_STONE_BRICK_SLAB);
+        mossStoneBricksPool.wall(ModBlocks.MOSS_STONE_BRICK_WALL);
     }
 
     @Override

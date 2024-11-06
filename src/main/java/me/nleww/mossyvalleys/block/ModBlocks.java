@@ -3,9 +3,7 @@ package me.nleww.mossyvalleys.block;
 import me.nleww.mossyvalleys.MossyValleys;
 import me.nleww.mossyvalleys.block.custom.ChiseledMossBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -40,6 +38,17 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)
                     .strength(2.0F, 6.0F)
             ));
+
+    public static final Block MOSS_STONE_BRICK_STAIRS = registerBlock("moss_stone_brick_stairs",
+            new StairsBlock(ModBlocks.MOSS_STONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(ModBlocks.MOSS_STONE_BRICKS)));
+
+    public static final Block MOSS_STONE_BRICK_SLAB = registerBlock("moss_stone_brick_stairs",
+            new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.MOSS_STONE_BRICKS)));
+
+    public static final Block MOSS_STONE_BRICK_WALL = registerBlock("moss_stone_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(ModBlocks.MOSS_STONE_BRICKS)));
+
 
 
     private static Block registerBlock(String name, Block block){
