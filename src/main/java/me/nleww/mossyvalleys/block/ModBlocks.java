@@ -1,6 +1,7 @@
 package me.nleww.mossyvalleys.block;
 
 import me.nleww.mossyvalleys.MossyValleys;
+import me.nleww.mossyvalleys.block.custom.ChiseledMossBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -21,13 +22,24 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)
                     .strength(2.0F, 6.0F)
             ));
+    public static final Block MOSS_STONE = registerBlock("moss_stone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)
+                    .strength(2.0F, 6.0F)
+            ));
     public static final Block MOSS_STONE_PILLAR = registerBlock("moss_stone_pillar",
             new PillarBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
                     .strength(2.0F, 6.0F)
             ));
-
+    public static final Block CHISELED_MOSS_STONE = registerBlock("chiseled_moss_stone",
+            new ChiseledMossBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)
+                    .strength(2.0F, 6.0F)
+            ));
 
 
     private static Block registerBlock(String name, Block block){
@@ -46,6 +58,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.MOSS_STONE_BRICKS);
             entries.add(ModBlocks.MOSS_STONE_PILLAR);
+            entries.add(ModBlocks.MOSS_STONE);
         });
 
     }

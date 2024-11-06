@@ -1,9 +1,19 @@
 {
+  "_note_": " ITEMS GO HERE ",
   "item.mossyvalleys.moss_gem": "Moss Gem",
   "item.mossyvalleys.moss_gem_relic": "Relic Moss Gem",
+  "item.mossyvalleys.moss_clump": "Moss Clump",
 
+  "note_": " BLOCKS GO HERE ",
   "block.mossyvalleys.moss_stone_bricks": "Moss Stone Bricks",
-    "block.mossyvalleys.moss_stone_pillar": "Moss Stone Pillar",
+  "block.mossyvalleys.moss_stone_pillar": "Moss Stone Pillar",
+  "block.mossyvalleys.moss_stone": "Moss Stone",
+  "block.mossyvalleys.chiseled_moss_stone": "Chiseled Moss Stone",
 
-  "itemGroup.mossyvalleys.mossy_valleys": "Mossy Valleys"
+  "note": " ITEM GROUPS GO HERE ",
+  "itemGroup.mossyvalleys.mossy_valleys": "Mossy Valleys",
+
+  "_note": " TOOLTIPS GO HERE ",
+  "block.mossyvalleys.chiseled_moss_stone.tooltip": "§7May react if moss clumps should be dropped on it",
+  "block.mossyvalleys.moss_clump.tooltip": "§7Reactive to stone"
 }

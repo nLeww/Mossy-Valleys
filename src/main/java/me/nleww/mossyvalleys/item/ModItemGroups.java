@@ -19,8 +19,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MOSS_GEM);
                         entries.add(ModItems.MOSS_GEM_RELIC);
+                        entries.add(ModItems.MOSS_CLUMP);
                         entries.add(ModBlocks.MOSS_STONE_BRICKS);
                         entries.add(ModBlocks.MOSS_STONE_PILLAR);
+                        entries.add(ModBlocks.MOSS_STONE);
+                        entries.add(ModBlocks.CHISELED_MOSS_STONE);
                     })
                     .build());
 

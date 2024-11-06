@@ -1,6 +1,7 @@
 package me.nleww.mossyvalleys.item;
 
 import me.nleww.mossyvalleys.MossyValleys;
+import me.nleww.mossyvalleys.item.custom.MossClumpItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,6 +15,9 @@ public class ModItems {
     public static final Item MOSS_GEM_RELIC = registerItem("moss_gem_relic", new Item(new Item.Settings()
             .maxCount(1)
             .rarity(Rarity.EPIC)
+    ));
+    public static final Item MOSS_CLUMP = registerItem("moss_clump", new MossClumpItem(new Item.Settings()
+            .maxDamage(64)
     ));
 
 
