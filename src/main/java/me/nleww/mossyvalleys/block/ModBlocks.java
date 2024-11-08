@@ -43,7 +43,7 @@ public class ModBlocks {
             new StairsBlock(ModBlocks.MOSS_STONE_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.copy(ModBlocks.MOSS_STONE_BRICKS)));
 
-    public static final Block MOSS_STONE_BRICK_SLAB = registerBlock("moss_stone_brick_stairs",
+    public static final Block MOSS_STONE_BRICK_SLAB = registerBlock("moss_stone_brick_slab",
             new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.MOSS_STONE_BRICKS)));
 
     public static final Block MOSS_STONE_BRICK_WALL = registerBlock("moss_stone_brick_wall",
