@@ -1,6 +1,7 @@
 package me.nleww.mossyvalleys.entity.client;
 
 
+import me.nleww.mossyvalleys.entity.animation.ModAnimations;
 import me.nleww.mossyvalleys.entity.custom.MosslingEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
@@ -44,8 +45,13 @@ public class MosslingEntityModel<T extends MosslingEntity> extends SinglePartEnt
         return null;
     }
 
+    private void setHeadAngles(float headYaw, float headPitch) {
+        this.Mossling.getChild("head").pitch = headPitch;
+        this.Mossling.getChild("head").yaw = headYaw;
+    }
+
     @Override
-    public void setAngles(T entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
+    public void setAngles(MosslingEntity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
 
     }
 }

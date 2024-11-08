@@ -6,7 +6,7 @@ import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.util.Identifier;
 
 public class MosslingEntityRender extends MobEntityRenderer<MosslingEntity, MosslingEntityModel<MosslingEntity>>  {
-    public static final Identifier TEXTURE = Identifier.of("mossyvalleys", "textures/entity/mosslet/mossling.png");
+    public static final Identifier TEXTURE = Identifier.of("mossyvalleys", "textures/entity/mossling.png");
 
     public MosslingEntityRender(EntityRendererFactory.Context context) {
         super(context, new MosslingEntityModel<>(context.getPart(ModModelLayers.MOSSLING)), 0.5f);

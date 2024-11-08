@@ -1,5 +1,7 @@
 package me.nleww.mossyvalleys.block.custom;
 
+import me.nleww.mossyvalleys.entity.ModEntities;
+import me.nleww.mossyvalleys.entity.custom.MosslingEntity;
 import me.nleww.mossyvalleys.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -30,10 +32,10 @@ public class ChiseledMossBlock extends Block {
                 world.setBlockState(pos, Blocks.AIR.getDefaultState());
                 item.getStack().decrement(1);
                 spawnBreakParticles(world, null, pos, state);
-                ZombieEntity zombie = EntityType.ZOMBIE.create(world);
-                if (zombie != null) {
-                    zombie.refreshPositionAndAngles(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0);
-                    world.spawnEntity(zombie);
+                MosslingEntity mossling = ModEntities.MOSSLING.create(world);
+                if (mossling != null) {
+                    mossling.refreshPositionAndAngles(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0);
+                    world.spawnEntity(mossling);
                 }
             }
         }
