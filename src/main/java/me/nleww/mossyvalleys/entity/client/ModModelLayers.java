@@ -5,6 +5,8 @@ import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.util.Identifier;
 
 public class ModModelLayers {
-    public static final EntityModelLayer MOSSLING =
-            new EntityModelLayer(Identifier.of(MossyValleys.MOD_ID,"mossling"), "main");
+    public static final EntityModelLayer MOSSLING = new EntityModelLayer(Identifier.of("mossyvalleys", "mossling"), "main");
+    public static final EntityModelLayer MOSSCOON = new EntityModelLayer(Identifier.of("mossyvalleys", "mosscoon"), "main");
+
 }
+

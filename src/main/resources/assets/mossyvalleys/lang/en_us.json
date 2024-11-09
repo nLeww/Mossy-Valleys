@@ -3,6 +3,8 @@
   "item.mossyvalleys.moss_gem": "Moss Gem",
   "item.mossyvalleys.moss_gem_relic": "Relic Moss Gem",
   "item.mossyvalleys.moss_clump": "Moss Clump",
+  "item.mossyvalleys.mossling_spawn_egg": "Mossling Spawn Egg",
+  "item.mossyvalleys.mosscoon_spawn_egg": "Moss Coon Spawn Egg",
 
   "note_": " BLOCKS GO HERE ",
   "block.mossyvalleys.moss_stone_bricks": "Moss Stone Bricks",
@@ -19,4 +21,5 @@
   "_note": " TOOLTIPS GO HERE ",
   "block.mossyvalleys.chiseled_moss_stone.tooltip": "§7May react if moss clumps should be dropped on it",
   "block.mossyvalleys.moss_clump.tooltip": "§7Reactive to stone"
+
 }

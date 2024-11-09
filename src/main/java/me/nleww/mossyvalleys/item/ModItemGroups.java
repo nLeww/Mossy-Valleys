@@ -20,6 +20,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MOSS_GEM);
                         entries.add(ModItems.MOSS_GEM_RELIC);
                         entries.add(ModItems.MOSS_CLUMP);
+                        entries.add(ModItems.MOSSLING_SPAWN_EGG);
+                        entries.add(ModItems.MOSSCOON_SPAWN_EGG);
                         entries.add(ModBlocks.MOSS_STONE);
                         entries.add(ModBlocks.MOSS_STONE_BRICKS);
                         entries.add(ModBlocks.MOSS_STONE_PILLAR);

@@ -1,5 +1,6 @@
-package me.nleww.mossyvalleys.entity.client;
+package me.nleww.mossyvalleys.entity.client.mossling;
 
+import me.nleww.mossyvalleys.entity.client.ModModelLayers;
 import me.nleww.mossyvalleys.entity.custom.MosslingEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
