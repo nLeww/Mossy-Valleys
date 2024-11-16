@@ -4,6 +4,7 @@ import me.nleww.mossyvalleys.block.ModBlocks;
 import me.nleww.mossyvalleys.entity.ModEntities;
 import me.nleww.mossyvalleys.item.ModItemGroups;
 import me.nleww.mossyvalleys.item.ModItems;
+import me.nleww.mossyvalleys.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,5 +20,6 @@ public class MossyValleys implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerModItemGroups();
 		ModEntities.registerModEntities();
+		ModSounds.registerModSounds();
 	}
 }
